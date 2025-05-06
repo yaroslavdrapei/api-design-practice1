@@ -12,5 +12,9 @@ const fetchGists = async () => {
     <p class="title">${title}</p>
     <p class="codeBlock">${codeBlock}</p>
     `
-  })
+
+    parent.append(gist);
+  });
 };
+
+fetchGists();
