@@ -14,7 +14,8 @@ export class GistsController {
   }
 
   @Post()
-  create(@Body() body: CreateGistDto) {
-    this.gistsService.create(body);
+  create(@Body() body: any) {
+    console.log(body);
+    // this.gistsService.create(body);
   }
 }
